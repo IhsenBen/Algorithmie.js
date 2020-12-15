@@ -54,3 +54,10 @@ document.getElementById("nombre_entier").innerHTML = some;
 document.getElementById("min").innerHTML = min;
 document.getElementById("max").innerHTML = max;
 document.getElementById("moyenne").innerHTML = moyenne;
+
+
+//3
+// var x = prompt("are u retarded?");
+// if (x === "Yes") {
+// alert("Hell yeah u are!");
+// }
