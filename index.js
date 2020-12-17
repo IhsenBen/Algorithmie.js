@@ -94,13 +94,21 @@ function reset() {
 function table(){
   for (let i=1;i<=10; i++){
     for (let f=1;f<=10; f++){
-      result= i*f;
-      document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>";
+     
+      var id = setInterval(typing, 800);
+      function typing(){
+        result= i*f;
+        document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>";
+        function stopinterval() {
+          clearInterval(id);
+        }
+      }
       
     }
   }
   }
-
+  
+  
   
   document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37) {
