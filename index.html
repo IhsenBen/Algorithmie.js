@@ -8,20 +8,46 @@
     <title>Algo en Js</title>
 </head>
 <body>
+    <h2>Exercice 3</h2>
     <label>Tape ton âge</label>   
     <input type="number" id="age">
     <button>Valider</button>
     <p id="txt"></p>
 
-
+<!-- algo 2 -->
     <h2>Exercice 2</h2>
-<input type="number" id="saisie"></input>
-    <h3>La somme </h3><p id="nombre_entier"></p>
-    <h3>Nombre max</h3><p id="max"></p>
-   <h3>Nombre min</h3> <p id="min"></p>
-   <h3>Moyenne des nombres</h3> <p id="moyenne"></p>
-    
- 
+   
+<input type="number" id="userNumber" onfocus="this.value=''">
+
+<button id="btnmyNumber" onclick="getnumber()" >Calculez</button>
+
+<button id="test" onclick="reset();" >Reset</button>
+
+        <!-- prin elements of 2 :-->
+
+
+    <h3>La somme </h3><p id="nombre_entier">0</p>
+    <h3>Nombre max</h3><p id="max">0</p>
+   <h3>Nombre min</h3> <p id="min">0</p>
+   <h3>Moyenne des nombres</h3> <p id="moyenne">0</p>
+
+<!-- -----algo 3--------->
+   <h2>Exercice 3</h2>
+<h3>Entrez votre age:</h3>
+
+
+
+
+<!---Algo 4 -->
+<h3>Cliquez sur button pour afficher la table de multiplication</h3>
+<button id="table" onclick="table()">10 tables de multiplication</button>
+<button id="table">stop</button>
+
+<div id="multip"></div>
+
+
+
     <script src="index.js"></script>
+
 </body>
 </html>

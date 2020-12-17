@@ -15,8 +15,103 @@ function verif() {
   }
 }
 
-// take input from the user
-// const number = parseInt(prompt('Enter a positive integer: '));
+//----
+
+var somme = 0;
+var compteur = 0;
+var moyenne = 0;
+var min = 0;
+var max = 0;
+
+
+
+
+function getnumber() {
+  nombre = document.getElementById("userNumber").value;
+  
+if (nombre != 0) {
+    compteur = compteur + 1;
+    somme = parseInt(nombre) + somme;
+    moyenne = somme / compteur;
+}
+if (nombre > max) {
+  max = nombre;
+}
+if ( nombre>0) {
+  min = nombre;
+  }
+
+  if (nombre == 0) {
+    document.getElementById("nombre_entier").innerHTML = somme;
+    document.getElementById("min").innerHTML = min;
+    document.getElementById("max").innerHTML = max;
+    document.getElementById("moyenne").innerHTML = moyenne;
+   
+  }
+;
+}
+
+
+
+function reset() {
+  var somme =0;
+  var moyenne = undefined;
+  var min = undefined;
+  var max = undefined
+    document.getElementById("nombre_entier").innerHTML = somme;
+    document.getElementById("min").innerHTML = min;
+    document.getElementById("max").innerHTML = max;
+    document.getElementById("moyenne").innerHTML = moyenne;
+}
+ 
+
+// function calculation(){
+// while (nombre>0) {
+//   if (nombre < min) {
+//     min = nombre;
+//   }
+
+//   if (nombre > max) {
+//     max = nombre;
+//   }
+
+//   compteur = compteur + 1;
+//   some = nombre + some;
+//   moyenne = some / compteur;
+
+// }
+// }
+// document.getElementById("nombre_entier").innerHTML = some;
+// document.getElementById("min").innerHTML = min;
+// document.getElementById("max").innerHTML = max;
+// document.getElementById("moyenne").innerHTML = moyenne;
+
+
+///algo 4
+
+
+
+function table(){
+  for (let i=1;i<=10; i++){
+    for (let f=1;f<=10; f++){
+      result= i*f;
+      document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>";
+      
+    }
+  }
+  }
+
+  
+  document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 37) {
+        alert('Left was pressed');
+    }
+    else if(event.keyCode == 39) {
+        alert('Right was pressed');
+    }
+});
+
+
 
 // let sum = 0;
 
@@ -28,36 +123,6 @@ function verif() {
 
 // console.log('The sum of natural numbers:', sum);
 
-var some = 0;
-var compteur = 0;
-var moyenne = 0;
-var min = 0;
-var max = 0;
-
-var nombre = parseInt(prompt("Enter a positive integer: "));
-
-while (nombre !=0) {
-  if (nombre < min) {
-    min = nombre;
-  }
-
-  if (nombre > max) {
-    max = nombre;
-  }
-
-  compteur = compteur + 1;
-  some = nombre + some;
-  moyenne = some / compteur;
-  nombre = parseInt(prompt("Enter a positive integer: "));
-}
-document.getElementById("nombre_entier").innerHTML = some;
-document.getElementById("min").innerHTML = min;
-document.getElementById("max").innerHTML = max;
-document.getElementById("moyenne").innerHTML = moyenne;
 
 
-//3
-// var x = prompt("are u retarded?");
-// if (x === "Yes") {
-// alert("Hell yeah u are!");
-// }
+
