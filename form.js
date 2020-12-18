@@ -32,7 +32,7 @@ function email_Verify(){
 }
 
 function pass_Verify(){
-    if (password.value.length >= 5){
+    if (password.value.length >= 6){
         password.style.border = "3px solid blue";
         pass_error.style.display = "none";
         return true;
