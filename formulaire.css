@@ -1,0 +1,356 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#272640;
+  
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+  }
+  .container{
+    padding-top:400px;
+    padding-bottom:400px;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    }
+  
+  p {
+    text-align: center;
+    color: 006466;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50%;
+  }
+  
+  .message>p{
+    color:white;
+  }
+  
+  .box {
+    padding-top:100px;
+    padding-bottom:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box>button{
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #4D194D;
+    -webkit-text-stroke: 1px black;
+    color: white;
+  }
+  
+  
+  .chrono{
+    padding-top:100px;
+    padding-bottom:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  
+    /* input[type=text]{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      -webkit-text-stroke: 1px black;
+      font-size: 150px;
+      text-align: center;
+      background-color:#272640;
+      color:#006466;
+    } */
+    
+  .chronoform>input{
+    background-color: #3A015C;
+    height: 100px;
+    width: 200px;
+    margin:50px;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+  
+  }
+  
+  
+  #nombre{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    -webkit-text-stroke: 5px black;
+    color: white;
+  }
+  
+   #plus,#moin{
+    height: 100px;
+    width: 200px;
+    background-color:#3A015C;
+    margin:50px;
+    font-size: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    -webkit-text-stroke: 4px black;
+    
+  }
+  
+  .horloge{
+    width:350px;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black url(clock.png);
+    background-size: cover;
+    border-radius:50%;
+    border: 20px solid white;
+    box-shadow:inset 0 0 30px black,
+                     0 20px 20px black,
+                     0 0 0 4px black;
+  }
+  
+  .horloge::before
+  {
+    content:'';
+    position:absolute;
+    width: 15px;
+    height: 15px;
+    background: grey;
+    border-radius:50px;
+    border: 2px solid white;
+    z-index: 100000;
+  }
+  
+  .heures,
+  .minutes,
+  .secondes
+  {
+    position: absolute;
+  }
+  .heures, .hr{
+    width: 160px;
+    height: 160px;;
+  }
+  .minutes, .mn{
+    width:190px;
+    height:190px;
+  }
+  
+  .secondes, .sc{
+    widows: 230px;;
+    height: 230px;
+  }
+  
+  .hr,.mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius:50%;
+  }
+  
+  .hr::before{
+    content:'';
+    position: absolute;
+    width:8px;
+    height:80px;
+    background:white;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .mn::before{
+    
+      content:'';
+      position: absolute;
+      width: 4px;
+      height:90px;
+      background: orange;
+      z-index: 11;
+      border-radius: 6px 6px 0 0;
+    
+  }
+  
+  .sc::before{
+    
+    content:'';
+    position: absolute;
+    width: 2px;
+    height:150px;
+    background: red;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+  
+  }
+  
+  .container_login{
+    position: relative;
+    margin-top:100px;
+    width: 450px;
+    height: auto;
+    background: #dedede;
+    border-radius: 5px;
+    font-family: sans-serif ;
+  }
+  .label{
+    padding: 20 px 130px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #130f40;
+  }
+  .login_input{
+    padding: 20px 40px;
+  
+  }
+  .login_input .font{
+  font-size:18px;
+  color:#130f40;
+  margin: 5px 0;
+  }
+  
+  .login_input .font2{
+    margin-top: 30px;
+  }
+  
+  .login_input input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+  }
+  .login_input button{
+    margin: 45px 0 45px 0;
+    height: 45px;
+    width: 365px;
+    font-size:20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background:#1a237e;
+    border-radius:3px;
+    border:1px solid #3949ab;
+    transition: .8s;
+  }
+  
+  .login_input button:hover{
+    background: black;
+  }
+  
+  .login_input #email_error,
+  .login_input #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #c62828;
+    background: rgba (255,0,0,0,1) ;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius:3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+  }
+  
+  
+  
+  
+  /* loto */
+  
+  .liste_num {
+    margin-top:200px;
+    display: flex;
+    
+  }
+  
+  .holder {
+    width: 100px;
+    height: 100px;
+    flex: 1;
+    margin: 1%;
+    display: block;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+  }
+  .holder_1{
+    width: 100px;
+    height: 100px;
+    flex: 1;
+    margin: 1%;
+    display: block;
+    border-radius: 50%;
+    background: #EEBB08;
+    text-align: center;
+  }
+  
+  .numero_etoile{
+    font-size:60px;
+    line-height: 100px;
+  }
+  
+  
+  
+  .numero{
+    font-size:60px;
+    line-height: 100px;
+  }
+  
+  
+  
+  
+  .generer{
+    margin: 45px 0 45px 0;
+    height: 45px;
+    width: 365px;
+    font-size:20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background:#EEBB08;
+    border-radius:3px;
+    border:1px solid #b9b72a;
+    transition: .8s;
+  }
+  
+  
+  .generer:hover{
+   background: #06289B;
+    
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .liste_num{
+      width: 500px;
+    }
+    .message>p{
+      color:white;
+      font-size: 30px;
+    }
+    
+  }

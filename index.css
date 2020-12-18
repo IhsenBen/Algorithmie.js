@@ -1,0 +1,198 @@
+@font-face {
+    font-family: space;
+    src: url(spaceinvaders.woff);
+  }
+body{
+    background-color: black;
+    color:green;
+    font-family: space;
+}
+h2{
+    text-align: center;
+}
+.header{
+    height: 80px;
+    border: 3px solid green;
+
+   
+}
+.header_title{
+    margin-left:30px;
+}
+.c6{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+align-items: center;
+flex-direction: column;
+}
+.exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border: 3px solid green;
+    position: relative;
+    float:right;
+   margin-right: 30px;
+    top:-80px;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+  padding-bottom: 200px;
+}
+
+button{
+    background-color: black;
+    color: green;
+    border: 3px solid green;
+    font-family: space;
+    cursor: pointer;
+    font-size: 20px;
+    display:block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+
+}
+input{
+    background-color: black;
+    color: green;
+    border: 3px solid green;
+    font-family: space;
+}
+#bloc_age{
+    display:none;
+    margin-bottom: 20px;
+}
+
+
+.Ex_11, .Ex_10, .Ex_9, .Ex_8, .Ex_7, .Ex_6, .Ex_5, .Ex_4, .Ex_3, .Ex_2,.Ex_1 {
+    padding-top: 200px;   
+    align-items: center;
+}
+
+    
+
+.Ex_4{
+    text-align: center;
+}
+
+#tableau{
+    text-align: center;
+    width:800px;
+    overflow-y: auto;
+    height: 100px;
+    display: block;
+}
+
+#bloc_fac{
+    display:none;
+}
+
+#impair_window{
+    text-align: center;
+    width:600px;
+    overflow-y: auto;
+    height: 200px;
+    display: block;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+  margin:30px auto;
+  position: relative;
+  display: block;
+  border-left:0px  solid transparent;
+  border-right: 500px  solid transparent;
+  border-bottom: 300px  solid green;
+}
+
+.triangle:before{
+    content:"";
+    width: 0px;
+    height:0px;
+
+    position: absolute;
+    border-left:0px solid transparent;
+    border-right:480px solid transparent;
+    border-bottom: 280px solid black;
+    top:15px;
+    left:5px;
+}
+#illus_cotA{
+    width: 200px;
+    height:0px;
+    margin:0px auto;
+    position: relative;
+    top: 389px;
+}
+
+#illus_cotB{
+    width: 200px;
+    height:0px;
+    margin:0px auto;
+    position: relative;
+    top: 210px;
+    padding-right:598px;
+}
+
+#illus_result{
+    width: 400px;
+    height:0px;
+    margin:0px auto;
+    position: relative;
+    padding-left:150px;
+    top:150px;
+    transform: rotate(30deg); 
+}
+.triangle_inputs{
+    text-align: center;
+}
+#six_natural_numbers{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.instruction{
+    font-size: 25px;
+    animation: typing 6s steps(56), blink-caret 0.85s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: .12em solid green;
+}
+
+.printR {
+    font-size: 20px;
+    animation: typing 5s steps(56), blink-caret 0.85s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: .12em solid green;
+
+  }
+  
+  
+  
+  @keyframes typing {
+    from { 
+    width: 0; 
+    }
+    to { 
+    width: 100%; 
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green }
