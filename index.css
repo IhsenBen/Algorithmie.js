@@ -47,6 +47,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
   padding-bottom: 200px;
+
 }
 
 button{
@@ -67,6 +68,7 @@ input{
     color: green;
     border: 3px solid green;
     font-family: space;
+    width: 150px;
 }
 #bloc_age{
     display:none;
@@ -75,6 +77,7 @@ input{
 
 
 .Ex_11, .Ex_10, .Ex_9, .Ex_8, .Ex_7, .Ex_6, .Ex_5, .Ex_4, .Ex_3, .Ex_2,.Ex_1 {
+    
     padding-top: 200px;   
     align-items: center;
 }
