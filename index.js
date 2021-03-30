@@ -84,15 +84,11 @@ function table(){
     for (let f=1;f<=10; f++){
       
       
-      var id= setInterval(typing, 1000);
-      function typing(){
+  
         result= i*f;
-        document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>";
         
-      };
-      
-
-   
+        document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>"; 
+       
       
     }
     
