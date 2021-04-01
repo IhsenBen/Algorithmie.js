@@ -88,7 +88,6 @@ function table(){
         result= i*f;
         
         document.getElementById("multip").innerHTML += (`${i}*${f}=${result}`) + "</br>"; 
-       
       
     }
     
