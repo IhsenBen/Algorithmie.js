@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="" type="" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
         <link rel="stylesheet" href="index.css">
+        
        
 
 
@@ -12,11 +14,15 @@
     </head>
     <body>
 
-        <div class="header"><div class="header_title"><h1> Portfolio &nbsp; Algorithmie.exe</h1></div><div class="exit"><h1>X</h1></div><div class="box1" ></div></div>
+<div class="conter-fluid justify-content-md-center">
+    <div class="header"><div class="header_title"><h1> Portfolio &nbsp; Algorithmie.exe</h1></div><div class="exit"><h1>X</h1></div><div class="box1" ></div></div>
+    
+</div>
+      
 
-        <div class="container">
+        <div class="container mx-auto p-x-xl">
 
-          
+          <div class="row justify-content-md-center">
             <div class="Ex_1 ">
                 <h2>Exercice 1</h2>
                 <p class="instruction">Entrez Votre Age</p>
@@ -25,14 +31,16 @@
                 <p  class="printR" id="txt"></p>
             </div>
 
+          </div>
+           
 
 
 
 
 
 
-
-            <div class="Ex_2 row">
+           <div class="row justify-content-md-center">
+            <div class="Ex_2">
                 <!-- algo 2 -->
                 <h2>Exercice 2</h2>
                 <p class="instruction">Rentrez 0 pour afficher le resultat</p>
@@ -48,145 +56,168 @@
 
             </div>
 
+           </div>
+            
+
+
+
+<div class="row justify-content-md-center">
+    <div class="Ex_3">
+        <!-- -----algo 3--------->
+        <h2>Exercice 3</h2>
+        <p class="instruction">Entrez votre age:</p>
+        <input type="number" id="userinput" onfocus="this.value=''">
+        <button id="valider_age" onclick="verifage()">Confirmer</button>
+        <div id="bloc_age">
+            <p class="printR" id="lareponse"></p>
+            Shouaitez-vous recommencrer?
+            <button id="response_oui" onclick="reponse_yes()">Yes</button>
+            <button id="reponse_non" onclick="reponse_non()">No</button>
+        </div>
+
+    </div>
+</div>
+            
 
 
 
 
-            <div class="Ex_3">
-                <!-- -----algo 3--------->
-                <h2>Exercice 3</h2>
-                <p class="instruction">Entrez votre age:</p>
-                <input type="number" id="userinput" onfocus="this.value=''">
-                <button id="valider_age" onclick="verifage()">Confirmer</button>
-                <div id="bloc_age">
-                    <p class="printR" id="lareponse"></p>
-                    Shouaitez-vous recommencrer?
-                    <button id="response_oui" onclick="reponse_yes()">Yes</button>
-                    <button id="reponse_non" onclick="reponse_non()">No</button>
-                </div>
+<div class="row justify-content-md-center">
+    <div class="Ex_4">
+        <!---Algo 4 -->
+        <h2>Exercice 4</h2>
+        <p class="instruction">Appuyez sur le bouton </br> pour afficher la table de multiplication de 10</p>
+        <button id="table" onclick="table()">10 tables de multiplication</button>
+        <button onClick="history.go(0);">stop</button>
+        <div id="tableau">
+            <p id="multip" class="printR"></p>
+        </div>
+        <p id="multip2"class="printR"></p>
 
-            </div>
+    </div>
+</div>
 
-
-
-
-
-
-            <div class="Ex_4">
-                <!---Algo 4 -->
-                <h2>Exercice 4</h2>
-                <p class="instruction">Appuyez sur le bouton pour afficher la table de multiplication de 10</p>
-                <button id="table" onclick="table()">10 tables de multiplication</button>
-                <button onClick="history.go(0);">stop</button>
-                <div id="tableau">
-                    <p id="multip" class="printR"></p>
-                </div>
-                <p id="multip2"class="printR"></p>
-
-            </div>
+          
 
 
 
+<div class="row justify-content-md-center">
+    <div class="Ex_5">
+        <!--- alogo 5-->
+        <h2>Exercice 5</h2>
+        <h3>Calcul de factorielle</h3>
+       <p class="instruction">Rentrez Un Numero:</p>  <input id="num_fac">
+        <button onclick="show()">Factorial</button>
+        <div id="bloc_fac">
+            <p class="printR" id="rfac"></p>
+            Shouaitez-vous recommencrer?
+            <button id="rfac_oui" onclick="reponsefac_yes()">Yes</button>
+            <button id="rfac_non" onclick="reponsefac_non()">No</button>
+        </div>
+    </div>
 
+</div>
 
-            <div class="Ex_5">
-                <!--- alogo 5-->
-                <h2>Exercice 5</h2>
-                <h3>Calcul de factorielle</h3>
-               <p class="instruction">Rentrez Un Numero:</p>  <input id="num_fac">
-                <button onclick="show()">Factorial</button>
-                <div id="bloc_fac">
-                    <p class="printR" id="rfac"></p>
-                    Shouaitez-vous recommencrer?
-                    <button id="rfac_oui" onclick="reponsefac_yes()">Yes</button>
-                    <button id="rfac_non" onclick="reponsefac_non()">No</button>
-                </div>
-            </div>
-
-            <div class="Ex_6">
-                <div class="c_6">
-                <div><h2>Excercise 6</h2>
-                    <p class="instruction">Cliquez sur Enter pour afficher
-                        les 20 premiers nombres impairs</p> 
-                </div>
-                <div>
+           <div class="row justify-content-md-center">
+            <div class="Ex_6 ">
+                     
+                <h2>Excercise 6</h2>
+                    <p class="instruction">Cliquez sur Enter pour afficher</br>
+                    les 20 premiers nombres impairs</p> 
+                
+                
                     <button id="oddnumbers_btn" onclick="impair()" >Enter</button>
-                </div>
+                
                     
-                </div>
+                
                     <div id="impair_window">
                         <p  class="printR" id="twent_odd"></p>
                     </div>
                 </div>
-
-                    <div class="Ex_7">
+           </div>
+            
+<div class="row justify-content-md-center">
+    <div class="Ex_7">
                     
-                    <h2>Excercise 7</h2>
-                    <h3>Calculez la longueur de l'hypotenuse d'un triangle rectangle a partir
-                        des longueurs saisies des 2 autres cotes</h3>
-                        <div class="triangle_inputs">
-                            <p class="instruction">La Longeur de cote A        
-                            <input type="number" id="coteA" onfocus="this.value=''"></p>
-                            
-                            
-                            <p class="instruction">La Longeur de cote B <input type="number" id="coteB" onfocus="this.value=''"></p>
-                            <button id="resultat_hypoten" onclick="hypotenuse()">Enter</button>
-                        </div>
+        <h2>Excercise 7</h2>
+        <h3>Calculez la longueur de l'hypotenuse d'un triangle rectangle a partir
+            des longueurs saisies des 2 autres cotes</h3>
+            <div class="triangle_inputs">
+                <p class="instruction">La Longeur de cote A        
+                <input type="number" id="coteA" onfocus="this.value=''"></p>
+                
+                
+                <p class="instruction">La Longeur de cote B <input type="number" id="coteB" onfocus="this.value=''"></p>
+                <button id="resultat_hypoten" onclick="hypotenuse()">Enter</button>
+            </div>
 
-                        <div class="shema_triangle">
-                            <div id="illus_cotA"> <p id="vcotea">cote A = 5</p></div>
-                            <div id="illus_cotB"><p id="vcoteb">cote B = 9</p></div>
-                            <div id="illus_result"><p class="printR" id="resultat_saisie">cote C = 10</p></div>
-                            <div class="triangle">
-                            </div>
-                        </div>
-                    </div>
+            <div class="shema_triangle">
+                <div id="illus_cotA"> <p id="vcotea">cote A = 5</p></div>
+                <div id="illus_cotB"><p id="vcoteb">cote B = 9</p></div>
+                <div id="illus_result"><p class="printR" id="resultat_saisie">cote C = 10</p></div>
+                <div class="triangle">
+                </div>
+            </div>
+        </div>
+</div>
+                   
 
 
+<div class="row justify-content-md-center">
+    <div class="Ex_8">
+        <h2>Exercice 8</h2>
+        <h3>SOMME des 6 premiers entier</h3> 
+        <button id="afficher" onclick="sumofnaturalN ()">Cliquez pour Afficher</button>
+        <p class="printR" id="six_natural_numbers"></p>
 
-                        <div class="Ex_8">
-                            <h2>Exercice 8</h2>
-                            <h3>SOMME des 6 premiers entier</h3> 
-                            <button id="afficher" onclick="sumofnaturalN ()">Cliquez pour Afficher</button>
-                            <p class="printR" id="six_natural_numbers"></p>
+    </div>
+</div>
 
-                        </div>
 
-                        <div class="Ex_9">
-                         <h2>Exercice 9</h2>
-                        <h3>X eleve a la puissance Y</h3> 
-                        <p class="instruction">Entrez un Nombre X       
-                            <input type="number" id="NumberX" onfocus="this.value=''"></p>
-                            
-                            
-                            <p class="instruction">Entrez une puissance Y<input type="number" id="puissance" onfocus="this.value=''"></p>
-                            <button id="resultat_pow" onclick="Puissance()">Enter</button>
-                            <div>
-                                <p  class="printR" id="resultat_puissance"></p>
-                            </div>
-                            
+<div class="row justify-content-md-center">
+    <div class="Ex_9">
+        <h2>Exercice 9</h2>
+       <h3>X eleve a la puissance Y</h3> 
+       <p class="instruction">Entrez un Nombre X       
+           <input type="number" id="NumberX" onfocus="this.value=''"></p>
+           
+           
+           <p class="instruction">Entrez une puissance Y<input type="number" id="puissance" onfocus="this.value=''"></p>
+           <button id="resultat_pow" onclick="Puissance()">Enter</button>
+           <div>
+               <p  class="printR" id="resultat_puissance"></p>
+           </div>
+</div>
+    
+        
 
-                        </div>
+    </div>
+
+                      
                 
 
-
-                <div class="Ex_10">
-                    <h2>Exercice 10</h2>
-                    <h3>Devinez le bon Numero</h3>
-                    <p class="instruction">Rentrez Un numero a deviner: </p>
-                    <input type='number' id="devinette" onfocus="this.value=''">
-                    <button id="devinette_btn" onclick="deviner()">Deviner</button>
-                    <div><p class="printR" id="message_devi"></p></div>
-                    
-                </div>
+<div class="row">
+    <div class="Ex_10">
+        <h2>Exercice 10</h2>
+        <h3>Devinez le bon Numero</h3>
+        <p class="instruction">Rentrez Un numero a deviner: </p>
+        <input type='number' id="devinette" onfocus="this.value=''">
+        <button id="devinette_btn" onclick="deviner()">Deviner</button>
+        <div><p class="printR" id="message_devi"></p></div>
+        
+    </div>
+</div>
+                
 
                 
         
                 
-            
+            <div class="row">
                 <form method="get" action="formulaire.html">
-                  <button type="submit"> Formulaire</button>
-                </form>
+                    <button type="submit"> Formulaire</button>
+                  </form>
+            </div>
+               
             
   </div>
 

@@ -11,16 +11,16 @@ h2{
     text-align: center;
 }
 .header{
-    height: 80px;
+    height: 100%;
     border: 3px solid green;
 
    
 }
 .header_title{
-    margin-left:30px;
+    margin-left:10%;
 }
 .c6{
-    text-align: center;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -33,20 +33,20 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60px;
-    width: 60px;
+    height: 60%;
+    width: 3%;
     border: 3px solid green;
     position: relative;
     float:right;
-   margin-right: 30px;
-    top:-80px;
+   margin-right: 1%;
+    bottom:3.5rem;
 }
 .container{
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-  padding-bottom: 200px;
+padding: 150px 50px 20px 50px;
 
 }
 
@@ -77,7 +77,7 @@ input{
 
 
 .Ex_11, .Ex_10, .Ex_9, .Ex_8, .Ex_7, .Ex_6, .Ex_5, .Ex_4, .Ex_3, .Ex_2,.Ex_1 {
-    
+    overflow-wrap: break-word;
     padding-top: 200px;   
     align-items: center;
 }
@@ -90,7 +90,7 @@ input{
 
 #tableau{
     text-align: center;
-    width:800px;
+    width:400px;
     overflow-y: auto;
     height: 100px;
     display: block;
@@ -102,7 +102,7 @@ input{
 
 #impair_window{
     text-align: center;
-    width:600px;
+    width:400px;
     overflow-y: auto;
     height: 200px;
     display: block;
@@ -111,12 +111,12 @@ input{
 .triangle{
     width: 0;
     height: 0;
-  margin:30px auto;
+  margin:10px auto;
   position: relative;
   display: block;
   border-left:0px  solid transparent;
-  border-right: 500px  solid transparent;
-  border-bottom: 300px  solid green;
+  border-right: 250px  solid transparent;
+  border-bottom: 150px  solid green;
 }
 
 .triangle:before{
@@ -126,35 +126,35 @@ input{
 
     position: absolute;
     border-left:0px solid transparent;
-    border-right:480px solid transparent;
-    border-bottom: 280px solid black;
-    top:15px;
-    left:5px;
+    border-right:240px solid transparent;
+    border-bottom: 140px solid black;
+    top:7px;
+    left:2px;
 }
 #illus_cotA{
-    width: 200px;
+    width: 50px;
     height:0px;
     margin:0px auto;
     position: relative;
-    top: 389px;
+    top: 194px;
 }
 
 #illus_cotB{
-    width: 200px;
+    width: 100px;
     height:0px;
     margin:0px auto;
     position: relative;
-    top: 210px;
-    padding-right:598px;
+    top: 105px;
+    padding-right:400px;
 }
 
 #illus_result{
-    width: 400px;
+    width: 300px;
     height:0px;
     margin:0px auto;
     position: relative;
     padding-left:150px;
-    top:150px;
+    top:50px;
     transform: rotate(30deg); 
 }
 .triangle_inputs{
@@ -168,6 +168,7 @@ input{
 
 .instruction{
     font-size: 25px;
+    overflow-wrap: break-word;
     animation: typing 6s steps(56), blink-caret 0.85s step-end infinite;
     overflow: hidden;
     white-space: nowrap;
@@ -177,6 +178,7 @@ input{
 
 .printR {
     font-size: 20px;
+    overflow-wrap: break-word;
     animation: typing 5s steps(56), blink-caret 0.85s step-end infinite;
     overflow: hidden;
     white-space: nowrap;
@@ -199,3 +201,33 @@ input{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: green }
+  }
+
+  @media (max-width: 575.98px) {  
+  h3{
+    font-size: 3.5vw;
+      text-align: justify;
+ }
+.instruction{
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+
+}
+.header_title>h1{
+    font-size: 4.5vw;
+
+}
+.exit>h1{
+    font-size: 4.5vw;
+
+}
+.exit{
+    height: 30%;
+    width: 5%;
+  
+   margin-right: 0.5%;
+    bottom:2.5rem;
+}
+
+}
+  
