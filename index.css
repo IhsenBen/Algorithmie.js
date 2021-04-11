@@ -219,14 +219,17 @@ input{
 }
 .exit>h1{
     font-size: 4.5vw;
+    text-align: center;
 
 }
 .exit{
-    height: 30%;
-    width: 5%;
-  
+    height: 25%;
+    width: 8%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
    margin-right: 0.5%;
-    bottom:2.5rem;
+    bottom:2rem;
 }
 
 }
